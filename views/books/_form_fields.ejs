@@ -1,0 +1,14 @@
+<label>Title</label>
+<input type="text" name="title" value="<%= book.name %>">
+<label> Author</label>
+<select name = "author" style="width: 470px">
+    <% authors.forEach(author => { %>
+        <% if (author.id === book.author) { %>
+            <option selected label=" <% author.name %>" value="<%= author.id %>" style="color: black;"></option>
+        <% } else { %>
+            <option  label=" <% author.name %>" value="<%= author.id %>" style="color: black;"></option>
+            <% } %>
+    <% }) %>
+</select>
+
+<!-- <input type="text" name="title" value="<%= book.title %>" > -->
