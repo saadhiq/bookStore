@@ -1,3 +1,8 @@
-<h1> Hassaan</h1>
-Middelse
-<p> Saadiq</p>
+<h1> Recently Added Books </h1>
+
+<div>
+    <% books.forEach(book => { %>
+        <img height="150" width="100" src="<%= book.coverImagePath %>">
+        <!-- <h3> <%= book.title %> </h3> -->
+    <% }) %>
+</div>
