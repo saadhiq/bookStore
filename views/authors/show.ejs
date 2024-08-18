@@ -13,6 +13,7 @@
 <%  } %> -->
 
 <h2><%= author.name %></h2>
+<p>  <%= author.editCount %> times edited </p>
 <a href="/authors/<%= author.id %>/edit">Edit</a>
 <%- include('../partials/deleteForm',
             { url: `/authors/${author.id}` }) %>

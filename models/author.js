@@ -30,6 +30,11 @@ const authorSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
+  },
+  editCount:{
+    type: Number,
+    required: false,
+    default:1
   }
 })
 
