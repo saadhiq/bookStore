@@ -34,7 +34,7 @@ const authorSchema = new mongoose.Schema({
   editCount:{
     type: Number,
     required: false,
-    default:1
+    default:0
   }
 })
 
